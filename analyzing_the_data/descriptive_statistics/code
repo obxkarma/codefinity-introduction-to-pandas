@@ -4,7 +4,7 @@ wine_data = pd.read_csv('https://codefinity-content-media.s3.eu-west-1.amazonaws
 
 # Write your code below
 residual_sugar_mean = wine_data['residual sugar'].mean()
-fixed_acidity_mode = wine_data['fixed acidity'].mode()
+fixed_acidity_mode = wine_data['fixed acidity'].mode()[0]
 described_data = wine_data.describe()
 
 # Testing the result
